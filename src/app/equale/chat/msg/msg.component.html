@@ -1,0 +1,5 @@
+<section class="message" [ngClass]="rightMsg ? 'right-message' : 'left-message'">
+<!--  <h1><strong>Usuario {{message.user}}</strong></h1>-->
+  <p>{{message.message}}</p>
+  <small>{{message.createdAt | date: 'dd/mm/yyyy HH:MM'}}</small>
+</section>

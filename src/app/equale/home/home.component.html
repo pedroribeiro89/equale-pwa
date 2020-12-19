@@ -1,0 +1,7 @@
+<app-toolbar></app-toolbar>
+<div class="user" *ngFor="let contact of contactList" [routerLink]="['../msg', contact.id]">
+  <span *ngIf="contact.pending > 0" [matBadge]="contact.pending.toString()" matBadgeOverlap="false" matBadgeColor="warn" >{{contact.email}}</span>
+  <span *ngIf="contact.pending === 0">{{contact.email}}</span>
+</div>
+<div class="loading" *ngIf="errorMsg.length > 0">{{errorMsg}}</div>
+<div class="loading" *ngIf="isLoading">Carregando contatos...</div>

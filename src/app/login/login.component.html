@@ -1,0 +1,17 @@
+<form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
+  <h1>EQUALE</h1>
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input type="text" matInput [formControl]="emailFormControl">
+    <mat-error *ngIf="emailFormControl.hasError('required')"> Email é <strong>obrigatório</strong> </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Senha</mat-label>
+    <input type="password" matInput [formControl]="passwordFormControl">
+    <mat-error *ngIf="passwordFormControl.hasError('required')"> Senha é <strong>obrigatório</strong> </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" color="primary" [disabled]="!loginFormGroup.valid">Entrar</button>
+  <mat-error *ngIf="errorMsg.length > 0"> Email ou senha incorretos. </mat-error>
+</form>
