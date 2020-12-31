@@ -20,7 +20,6 @@ import { ToolbarComponent } from './equale/toolbar/toolbar.component';
 import { MsgComponent } from './equale/chat/msg/msg.component';
 import {JwtModule} from '@auth0/angular-jwt';
 import {HttpClientModule} from '@angular/common/http';
-import {AuthService} from './auth/auth.service';
 import { RouterModule } from '@angular/router';
 
 export function tokenGetter() {

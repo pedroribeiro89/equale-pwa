@@ -1,25 +1,4 @@
 <app-toolbar></app-toolbar>
-<!--<article>-->
-<!--  <h1>-->
-<!--    <button mat-mini-fab routerLink="../../home"> <mat-icon>arrow_back</mat-icon> </button>-->
-<!--    Aluno 2-->
-<!--  </h1>-->
-
-<!--  <app-msg *ngFor="let msg of msgs"-->
-<!--                [message]="msg"-->
-<!--                [rightMsg]="msg.user === 1"-->
-<!--                class="message"-->
-<!--                [ngClass]="msg.user === 1 ? 'right-message' : 'left-message'"></app-msg>-->
-
-<!--  <div class="spacer"></div>-->
-<!--  <section class="send-msg">-->
-<!--    <mat-form-field>-->
-<!--      <mat-label>Mensagem</mat-label>-->
-<!--      <textarea matInput></textarea>-->
-<!--    </mat-form-field>-->
-<!--    <button mat-mini-fab color="primary"> <mat-icon>send</mat-icon> </button>-->
-<!--  </section>-->
-<!--</article>-->
 <div class="loading" *ngIf="isLoading">Carregando mensagens...</div>
 <div class="loading" *ngIf="errorMsg.length > 0">{{errorMsg}}</div>
 <article *ngIf="!isLoading">

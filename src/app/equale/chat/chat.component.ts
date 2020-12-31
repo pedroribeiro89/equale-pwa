@@ -12,19 +12,6 @@ import {FormControl} from '@angular/forms';
 })
 export class ChatComponent implements OnInit, OnDestroy {
 
-  // public msgs = [
-  //   { id: 1, user: 1, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 2, user: 1, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 3, user: 2, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 4, user: 1, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 5, user: 2, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 6, user: 1, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 7, user: 2, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 8, user: 2, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 9, user: 1, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() },
-  //   { id: 10, user: 2, msg: 'Bla bla bla bla bla bla bla bla bla bla bla bla', date: new Date() }
-  // ];
-
   private routeSubscription: Subscription;
 
   public userId: number;
